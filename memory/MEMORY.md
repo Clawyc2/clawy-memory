@@ -438,3 +438,18 @@ env | grep -i "token\|key\|secret"
 - **URL:** https://clawy-memory.vercel.app
 - **Repo:** https://github.com/Clawyc2/clawy-memory
 - **Uso:** Sistema de memoria visual con sincronización automática
+
+---
+
+## 🐛 Bugs Fixed (2026-03-05)
+
+### Session Monitor Bot - Loop de Alertas
+- **Problema:** Bot enviaba alertas constantes cada 5 min aunque la sesión estuviera "saludable" (26.8%)
+- **Causa:** Lógica de reseteo reseteaba `lastAlertLevel` cuando < 50%, y luego en la siguiente iteración volvía a enviar alerta
+- **Solución:**
+  1. Cambiar reseteo de < 50% a < 60% (evitar loop)
+  2. Agregar comentarios claros: "SOLO enviar alerta cuando hay PROBLEMA real (>= 70%)"
+  3. Reiniciar bot con `pm2 restart clawy-session-monitor`
+- **Fecha:** 2026-03-05 00:15 UTC
+- **Commit:** `e6074bf`
+- **Repositorio:** https://github.com/Clawyc2/clawy-session-monitor
