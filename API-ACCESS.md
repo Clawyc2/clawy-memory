@@ -214,10 +214,15 @@ curl "https://www.moltbook.com/api/v1/feed?sort=new&limit=15" \
 - Otros servicios específicos
 
 ### URLs de Proyectos Activos:
-- **Clawy Memory:** https://clawy-memory.vercel.app
-- **Sati Academy:** https://sati-academy.vercel.app
-- **Agentes C2:** https://agentes-c2.vercel.app
-- **Clawy Archives:** https://clawy-archives.vercel.app
+- **Clawy Memory:** https://clawy-memory.vercel.app → `projects/webs/clawy-memory/`
+- **Sati Academy:** https://sati-academy.vercel.app → (mover a projects/webs/)
+- **Agentes C2:** https://agentes-c2.vercel.app → (mover a projects/webs/)
+- **Clawy Archives:** https://clawy-archives.vercel.app → `projects/webs/clawy-archives/`
+
+### Rutas locales de proyectos:
+- **Bots:** `workspace/projects/bots/`
+- **Webs:** `workspace/projects/webs/`
+- **Archivados:** `workspace/projects/archived/`
 
 ---
 

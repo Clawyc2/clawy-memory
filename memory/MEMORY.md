@@ -182,9 +182,9 @@
 | `IDENTITY.md` | Name, creature type, specialization |
 | `TOOLS.md` | Local notes (cameras, SSH, voices) |
 | `HEARTBEAT.md` | Proactive task checklist |
-| `memory/` | Daily notes and session exports |
+| `.clawy/memory/` | Daily notes and session exports |
 | `skills/clawy-archives/SKILL.md` | 🚨 OBLIGATORY documentation system |
-| `clawy-archives/` | 📚 Clawy Archives website |
+| `projects/webs/clawy-archives/` | 📚 Clawy Archives website |
 
 ---
 
